@@ -1,0 +1,19 @@
+{
+  "name": "@test-app/infra",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "alchemy dev",
+    "deploy": "NODE_ENV=production alchemy deploy --stage prod",
+    "destroy": "alchemy destroy --stage prod"
+  },
+  "dependencies": {
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@test-app/config": "workspace:*",
+    "alchemy": "catalog:",
+    "typescript": "catalog:"
+  }
+}
